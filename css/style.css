@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-image: url("/img/web-bgd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0px 138px;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*--------------- Tablet ---------------*/
+@media screen and (max-width: 834px) {
+  body {
+    background-image: url("/img/tablet-bgd.png");
+  }
+}
+
+/*--------------- Mobile ---------------*/
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("/img/mobile-bgd.png");
+  }
+}
+
+/****************** BOX ****************/
+.container {
+  border: 1px solid black;
+  max-width: 1004px;
+  height: auto;
+  margin: auto;
+  margin-top: 40px;
+}
+
+/****************** CONTENT ****************/
+.header {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+p {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 57px 85px;
+}
+
+.left {
+  width: 60%;
+}
+
+.container > .header {
+  text-align: center;
+  padding: 59px 269px;
+}
+
+.confirm {
+  font-weight: 500;
+}
+
+/****************** EMAIL ****************/
+form {
+  margin-left: 44px;
+}
+
+input[type=text], input[type=submit] {
+  width: 328px;
+  height: 40px;
+  -webkit-box-shadow: 1px 1px 5px #707070;
+          box-shadow: 1px 1px 5px #707070;
+}
+
+input[type=text] {
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+}
+
+input[type=checkbox] {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+a:link, a:visited {
+  color: #F06B32;
+}
+
+input[type=submit] {
+  width: 338px;
+  background-color: #F06B32;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/*--------------- Tablet ---------------*/
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 0px 81px;
+  }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 57px 65px;
+    position: relative;
+  }
+  .left {
+    width: 100%;
+    overflow: hidden;
+  }
+  .right {
+    margin-top: 85px;
+  }
+  .right > form {
+    margin-left: 0px;
+  }
+  .highlight {
+    font-weight: 500;
+  }
+  .details {
+    position: absolute;
+    bottom: -167px;
+    padding-right: 70px;
+  }
+  .container > p.header {
+    padding: 55px 103px;
+  }
+}
+
+/*--------------- Mobile ---------------*/
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0px 16px;
+  }
+  .grid {
+    padding: 17px 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .details {
+    margin-top: 12px;
+    position: static;
+    padding-right: 0px;
+  }
+  .right {
+    margin-top: 21px;
+    margin-bottom: 27px;
+  }
+  input[type=text] {
+    max-width: 302px;
+  }
+  input[type=submit] {
+    max-width: 312px;
+  }
+  .container > p.header {
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
